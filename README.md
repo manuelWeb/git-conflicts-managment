@@ -1,0 +1,5 @@
+# README
+
+> POC Git pour gérer automatiquement les conflits suivant. Deux branches A et B qui ont démarrées de master. Master à un fichier fn.js vide mais bien dans le local repository. Sur la branche A on modifie le fichier fn.js en ajoutant sur la ligne 1 une fonction myFnA, puis on le commit -m'fichier A ajout fn myFnA'. Entre temps, sur la branche B on modifie le fichier fn.js en ajoutant sur la ligne 1 une fonction myFnB, puis on commit -m'fichier A ajout fn myFnA'. De retour sur Master on fusionne A, tout se passe bien car aucun conflit entre un fichier vide et le même avec une fonction en plus. Ensuite on fusionne la branche B et c'est la que nous avons un conflits sur la ligne 1 déjà occupée par la fn myFnA. Dans l'interface de vsCode on peut résoudre en par Accepter les deux modifications. L'idée est de ne pas à avoir à rentrer dans vsCode et via le terminal avec la commande merge demander un "Accepter les deux modifications". Est ce possible ? Existe il une option pour ça ?
+
+# git merge to accept both change
